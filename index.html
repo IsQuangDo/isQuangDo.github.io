@@ -5,79 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quang Do Loves Thuy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: black;
-            overflow: hidden;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        #heartText {
-            position: absolute;
-            font-size: 2rem;
-            z-index: 2;
-            color: white;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        #heartContainer {
-            position: absolute;
-            width: 300px;
-            height: 280px;
-            z-index: 1;
-        }
-        .heart {
-            position: absolute;
-            width: 50%;
-            height: 50%;
-            background-color: pink;
-            left: 25%;
-            top: 30%;
-            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-            transform: rotate(-45deg);
-        }
-        .heart::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: pink;
-            left: 0%;
-            top: -50%;
-            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-        }
-        .heart::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: pink;
-            left: 50%;
-            top: 0%;
-            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-        }
-        .flyingHeart {
-            position: absolute;
-            animation: fly 5s linear infinite;
-            font-size: 1.5rem;
-            z-index: 0;
-        }
-        @keyframes fly {
-            0% {
-                transform: translateY(100%) translateX(-50%);
-            }
-            100% {
-                transform: translateY(-100%) translateX(50%);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="heartContainer">
@@ -104,4 +32,3 @@
     </script>
 </body>
 </html>
-``
